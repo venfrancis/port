@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic);
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.lato{font-family: 'Lato', sans-serif;}
+body{                               overflow-x:hidden;background:#fff url(../img/bg_brand.jpg) center center no-repeat fixed;height:15000px;}
+/*top navigation*/
+#main{overflow: hidden;position: relative;}
+#wrapper{overflow: hidden;position: relative;}
+
+.bgVid{position:absolute;top:0px;z-index: 0;left:0px;}
+/*slide config*/
+.slide{ width: 100%;position: relative;}
+.control{width:960px; position:relative;margin: 0px auto;}
+.fill{position:relative;width:960px;}
+.scrollStat{position:fixed;z-index:99;width:100%;height:2px;background-color:#222;bottom:0px;left:0px;}
+.back2top{opacity:.8;cursor: pointer;position:fixed;z-index:100;width:50px;height:50px;bottom:20px;right:-100px;background: #222 url(../img/back2top.jpg) center center no-repeat; }
+
+
+/*first slide*/
+.first-slide{display:block;z-index:50;background: transparent url(../img/bg-first-slide.png) center center no-repeat; background-size: 100%;}
+/*change the mouse cursor*/
+.first-slide .fill:hover{cursor: url(../img/scrollDown.jpg),auto;}
+.first-slide h1{z-index:10;font-size: 92px;text-align: right;line-height: 1em;position:absolute;bottom:350px;letter-spacing: -1px;width:600px;margin:0px;color:#fff;text-shadow: 0px 2px 0px #222;}
+.first-slide h1 span{float: right;clear: both;font-size: 28px;margin: 0px 45px 0 0;padding: 9px;line-height: 1em;font-weight: 300;font-style: italic;background: #222;opacity: .8;}
+.sprite-container{position: absolute;width:600px;height:437px;left:0px;bottom:0px;}
+
+.myimg{z-index:1;width:600px;height:437px;background: transparent url(../img/bike-sprite.jpg);}
+
+.mypic-cont{position: absolute;width:600px;height:502px;left:0px;bottom:0px;}
+.mypic{z-index:11;position:absolute;width:600px;height:502px;background: transparent url(../img/me.png) center bottom no-repeat;background-size:78%;left: 180px;bottom: -22px;}
+
+
+/*broken glass*/
+.bglasses{position:relative;width:100%;height:900px;list-style: none;float:left;margin:-200px 0 0 0; padding:0px;}
+
+.para-bglass{position:absolute;width:1000px;height: 800px;zindex:10;}
+.g1{background: transparent url(../img/pieces1.png) center center no-repeat;z-index:9;}
+.g2{background: transparent url(../img/pieces2.png) center center no-repeat;z-index:9;}
+
+.glass-hole{z-index:1;position:absolute;width:100%;height:100%;left:0px;bottom:150px;background: transparent url(../img/glass-hole.png) center bottom no-repeat;background-size:50%;}
+
+
+
+/*second slide*/
+.second-slide{display:block;background: #111;z-index: 51;}
+.introCont{float:right;width:600px;display: block;}
+.introCont h2{z-index:10;font-size: 62px;text-align: right;line-height: 1em;position:absolute;top:100px;letter-spacing: -1px;width:600px;margin:0px;color:#fff;text-shadow: 0px 2px 0px #222;text-transform: uppercase;}
+.introCont > span{clear: both;font-size: 36px;margin: 0px;padding: 0px;line-height: 1em;font-weight: 300;
+                  font-style: italic;color: #FFF;position: absolute;top: 300px;right: 0px;text-align: right;}
+.introCont span em{font-style: normal;padding: 0px 10px;background: #FFF;color: #222;text-shadow: none;font-size: 24px;line-height: 1.5em;margin-top: 2px;float: left;margin-right: 10px;font-weight: bold;}
+
+.second-slide .smallTalk{position:absolute;bottom:100px;width:500px;height:200px;}
+.second-slide .smallTalk p{color:#fff;}
+
+
+
+/*third slide*/
+.third-slide{display:block;z-index:50;background: transparent;height: 1500px !important;}
+
+.started{z-index:55;position:absolute;top:25%;display:block;overflow: hidden;width: 100%;text-align: center;font-size: 62px;letter-spacing: -2px;text-transform: uppercase;line-height: .85em;}
+/*change the mouse cursor*/
+.third-slide .fill .started:hover{cursor: url(../img/scrollDown.jpg),auto;}
+.started em{clear:both;display:block;font-family: 'Garamond', Times New Roman, serif;color: #9E9E9E;text-shadow: 1px 1px 0px #FFF;font-style: normal;letter-spacing: 32px;font-size: 26px;}
+.belowStarted{z-index:55;position:absolute;top:70%;display:block;overflow: hidden;width: 100%;text-align: right;font-size: 42px;letter-spacing: -2px;text-transform: uppercase;line-height: .85em;}
+
+
+.third-slide .dna1 {z-index: 52;background: rgba(0, 0, 0, 0) url(../img/second-slide-dna1.png) left top no-repeat;width: 1500px;height: 1027px;background-size:80%;
+          position: absolute;left: 0px;top: 500px;}
+
+.third-slide .dna3-shad {z-index: 54;background: rgba(0, 0, 0, 0) url(../img/second-slide-dna3-shad.png) left top no-repeat;width: 720px;height: 674px;
+            position: absolute;left: -330px;top: -150px;}
+.third-slide .dna4-shad {z-index: 51;background: rgba(0, 0, 0, 0) url(../img/second-slide-dna4-shad.png) left top no-repeat;width: 2372px;
+          height: 972px;position: absolute;left: -1000px;top: 300px;}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
